@@ -3,6 +3,13 @@
         <div class="col-md-8 col-md-offset-2 text-center">
             <h1 style="font-family:'Open Sans', sans-serif;font-weight:800">Issues at WVU</h1>
             <hr>
+            <h4><i class="glyphicon glyphicon-info-sign"></i> Pro Tip: <span id="tip-text"></span></h4>
+            <script type="text/javascript" defer>
+                var messages = ["Click the up arrow beside an issue to vote it up and show your support for it!",
+                "If the arrow is orangered, you've already upvoted it.", "You can comment on any and all issues on their issue page.",
+                "Don't forget to vote on March 3rd, 4th, and/or 5th!"];
+                document.getElementById("tip-text").innerText = messages[Math.floor(Math.random() * messages.length)];
+            </script>
         </div>
     </div>
     {{#posts}}
