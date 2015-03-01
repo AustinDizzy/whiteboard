@@ -7,6 +7,14 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="/css/main.css">
         <title>Your Experience - Scott Braxton 2015</title>
+
+        {{#post}}
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@WVUExperience">
+        <meta name="twitter:title" content="{{Title}}">
+        <meta name="twitter:description" content="{{Description}}">
+        <meta name="twitter:image:src" content="/i/{{PostImage}}">
+        {{/post}}
     </head>
     <body>
         <div id="main">
